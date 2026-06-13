@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf Pack Legacy Vault • Bitcoin Family Protection Planner</title>
+    <meta name="description" content="Free Bitcoin Family Protection Audit + Interactive Legacy Builder by BTCWolvez">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        .bitcoin-orange { color: #F7931A; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-slate-800 bg-slate-950/95 backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-shield-halved text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <div style="font-size:22px; font-weight:700;">Wolf Pack <span class="bitcoin-orange">Legacy Vault</span></div>
+                        <div style="font-size:10px; color:#64748b; margin-top:-2px;">by BTCWolvez</div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <a href="https://stan.store/BTCWolvez" target="_blank" 
+                       style="padding:8px 16px; font-size:13px; border:1px solid #334155; border-radius:9999px; text-decoration:none; color:#e2e8f0;">
+                        Stan Store
+                    </a>
+                    <button onclick="document.getElementById('audit').scrollIntoView({ behavior: 'smooth' })" 
+                            style="padding:10px 20px; background:white; color:#0f172a; font-weight:600; font-size:13px; border-radius:9999px; border:none;">
+                        Start Free Audit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav> 
+      <!-- HERO -->
+    <header style="padding-top:80px; padding-bottom:60px; background:#0f172a;">
+        <div style="max-width:1280px; margin:0 auto; padding:0 24px;">
+            <div style="text-align:center; max-width:700px; margin:0 auto;">
+                <div style="display:inline-flex; align-items:center; gap:8px; background:#1e2937; border:1px solid #334155; padding:6px 16px; border-radius:9999px; margin-bottom:24px;">
+                    <div style="width:8px; height:8px; background:#22c55e; border-radius:50%; animation:pulse 2s infinite;"></div>
+                    <span style="font-size:11px; font-weight:600; color:#4ade80;">TRUSTED BY BITCOIN FAMILIES</span>
+                </div>
+                
+                <h1 style="font-size:42px; line-height:1.1; font-weight:800; margin:0 0 20px 0;">
+                    Will Your Family Be Able To<br>
+                    <span style="color:#F7931A;">Access Your Bitcoin</span><br>
+                    If You're Gone?
+                </h1>
+                
+                <p style="font-size:18px; color:#94a3b8; max-width:420px; margin:0 auto 32px;">
+                    The interactive Bitcoin Legacy Protection Planner.<br>
+                    Build a fortress your family can actually use.
+                </p>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+                    <button onclick="document.getElementById('audit').scrollIntoView({ behavior: 'smooth' })" 
+                            style="padding:16px 32px; background:white; color:#0f172a; font-weight:700; font-size:15px; border-radius:9999px; border:none;">
+                        Take the FREE Family Protection Audit
+                    </button>
+                    
+                    <button onclick="document.getElementById('builder').scrollIntoView({ behavior: 'smooth' })" 
+                            style="padding:16px 28px; background:transparent; color:white; font-weight:600; font-size:15px; border:2px solid #475569; border-radius:9999px;">
+                        Build My Legacy Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!-- TRUST BAR -->
+    <div style="border-top:1px solid #334155; border-bottom:1px solid #334155; background:#0f172a; padding:16px 0;">
+        <div style="max-width:1280px; margin:0 auto; padding:0 24px; display:flex; flex-wrap:wrap; justify-content:center; gap:24px; font-size:13px; color:#94a3b8;">
+            <div style="display:flex; align-items:center; gap:8px;">
+                <span style="color:#22c55e;">✓</span> 
+                <span>100% Self-Custody Focused</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px;">
+                <span style="color:#22c55e;">✓</span> 
+                <span>No Seed Phrases Shared • Ever</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px;">
+                <span style="color:#22c55e;">✓</span> 
+                <span>Faith • Family • Bitcoin = Freedom</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FREE AUDIT SECTION -->
+    <section id="audit" style="max-width:900px; margin:0 auto; padding:60px 24px;">
+        <div style="text-align:center; margin-bottom:40px;">
+            <div style="display:inline-block; background:#f9731a20; color:#f9731a; font-size:11px; font-weight:700; padding:4px 16px; border-radius:9999px; margin-bottom:12px;">START HERE</div>
+            <h2 style="font-size:36px; font-weight:800; margin:0 0 12px 0;">Bitcoin Family Protection Audit™</h2>
+            <p style="font-size:17px; color:#94a3b8; max-width:420px; margin:0 auto;">Discover exactly how prepared your family is — and what gaps could cost them everything.</p>
+        </div>
+
+        <div style="background:#0f172a; border:1px solid #334155; border-radius:24px; padding:32px;">
+            <div id="quiz-start">
+                <div style="text-align:center;">
+                    <div style="width:80px; height:80px; background:#f9731a20; border-radius:20px; display:flex; align-items:center; justify-content:center; margin:0 auto 24px; border:1px solid #f9731a40;">
+                        <i class="fa-solid fa-clipboard-check" style="font-size:42px; color:#f9731a;"></i>
+                    </div>
+                    <h3 style="font-size:26px; font-weight:700; margin:0 0 12px 0;">Ready to find out your Protection Score?</h3>
+                    <p style="color:#94a3b8; max-width:320px; margin:0 auto 32px;">Takes about 4 minutes. 100% private. Results are yours alone.</p>
+                    
+                    <button onclick="startQuiz()" 
+                            style="width:100%; max-width:280px; height:56px; background:linear-gradient(#f9731a, #fbbf24); color:white; font-weight:700; font-size:17px; border:none; border-radius:9999px;">
+                        Begin Free Audit →
+                    </button>
+                    <p style="font-size:11px; color:#64748b; margin-top:16px;">Your answers stay on this device. Nothing is sent to servers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    function startQuiz() {
+        alert("Quiz will start here in the full version. Great job getting the file this far!");
+        // Full quiz logic will be added in the next chunks
+    }
+    
+    // More JavaScript for the full app (Legacy Builder, PDF, etc.) coming next
+    console.log("Wolf Pack Legacy Vault - Partial load successful");
+</script>
